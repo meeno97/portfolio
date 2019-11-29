@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url("C:Users/Zafar R/Desktop/personal portfolio/images/7.jpg");
+	width: 100%;
+	height: 100%;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: black
+}
+.tab {
+ overflow: hidden;
+  border: 2px solid #ccc;
+  background-color: black
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+   background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 28px;
+  font-family: verdana;
+  font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0px 60px;
+  
+  border-top: none;
+  position: absolute;
+  width: 930px;
+  min-height: 500px;
+  height: auto;
+  bottom: -70px;
+  font-family: century gothic;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: bold;
+  border-style: initial;
+
+
+}
+</style>
+</head>
+<body>
+<div class="main">
+
+<h1>I am Mariam Zafar</h1>
+<hr>
+
+<h2>Software Engineer</h2>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'AboutMe')">AboutMe</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openCity(event, 'Achievements')">Achievements</button>
+</div>
+
+<!-- Tab content -->
+<div id="AboutMe" class="tabcontent">
+  <p> <b>Hello Friends,</b><br>
+          I am Mariam Zafar.I completed my graduation from Ned University of Engineering & Technology in,
+          Bachlors in Computer Science & Information Technology. <br>
+          I am hardworking and determined person always ready to empower knowledge and gain experience, 
+          cooperative with colleagues and sincere towaards the assigned task..<br>
+          I want to become a part of an organization that provides a healthy competitive environment,
+          which  helps in polishing my professional skills by ensuring productive atmosphere and learning opportunities.</p>
+        <p> I have completed many projects in my graduation level. I have command over many languages like C,C++,C#,HTML,CSS,
+          SQL,ASP.NET,PHP,R.</p>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <p>•Developed a bookstore website using PHP and DATABASE<br>
+• Develop several dummy projects using SQL server (back-end), C language and C++.<br>
+• Developed Attendance Portal based on ASP.NET frame work.<br>
+• Developed CRM Analysis Project based on data mining.
+<img src="C:Users/Zafar R/Desktop/personal portfolio/images/att.png" alt="HTML5 Icon" style="width:300px;height:300px;">
+<img src="C:Users/Zafar R/Desktop/personal portfolio/images/de.jpg" alt="HTML5 Icon" style="width:300px;height:300px;">
+
+</p>
+</div>
+
+<div id="Achievements" class="tabcontent">
+   <p>•Receive gold medal in matric for A-1 Grade.<br>
+    • Receive differnet certificates for participating in events.</p>
+    <img src="C:Users/Zafar R/Desktop/personal portfolio/images/ic.jpg" alt="HTML5 Icon" style="width:300px;height:300px;">
+     <img src="C:Users/Zafar R/Desktop/personal portfolio/images/t.jpg" alt="HTML5 Icon" style="width:300px;height:300px;">
+    
+
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+	</body>
+</html>
